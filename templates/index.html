@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Diabetics predictor</title>
+
+  <!-- CSS  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md tm-navbar" role="navigation">
+    <div class="container"><a id="container"  class="nav-link tm-nav-link">  </a>
+      <a href="https://ramnelluri.netlify.app/" class="nav-link tm-nav-link"><i class="material-icons">MY PROFILE</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Diabetics Prediction</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of Diabetes Occurence
+        <br>
+        </h5>
+      </div>
+    </div>
+  <div class="row">
+    <form action='/predict' method="post" class="col s12" >
+      <br class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Age : </b></label>
+           <br>
+           <br>
+          <input placeholder="Age in number" name="Age" id="first_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+          <label for="last_name"><b>Glucose :</b></label>
+          <br>
+          <br>
+          <input id="last_name" name="Glucose" placeholder="Glucose content in numbers"  type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Blood Pressure :</b></label>
+            <br>
+            <br>
+          <input id="_name" name="Blood Pressure" placeholder="Blood Pressure " type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+          <label for="name1"><b>Body Mass Index(BMI) :</b></label>
+          <br>
+          <br>
+          <input id="name1" name="Body Mass Index " placeholder="Weight In kg's" type="text" class="validate">
+        </div>
+   </div>
+      <div class="row center">
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+          <br>
+          <br>
+          <h class="row center"><b>{{pred}}</b></h>
+      </div>
+
+    </form>
+      </div>
+    </div>
+  </div>
+    <br><br>
+  </div>
+  </div>
+
+  <footer class="page-footer grey">
+    <div class="container">
+      <div class="row">
+        <div class="col 20 s12">
+          <h5 class="white-text"><b>Importance of life</b></h5>
+          <h7 class="white-text"><b>"Being honest may not get you a lot of friends but it'll always get you the right ones.” </b></h7>
+          <p class="grey-text text-lighten-4">Your life is what you make it. Your present life is the result of all the choices you have made up until this moment. You are the only one responsible for where you are right now, for how your life looks, for how you are being treated by those around you and for the level of happiness or unhappiness present in your life. You and only you. If you want to change the quality of your life, if you want to change the quality of the relationships you have, you have to start by taking responsibility for everything. Yes, everything!
+
+If you keep on doing the same things over and over again, you will get the same results, over and over again. Your life will change the moment you decide it is time to change, it’s that simple. It all starts with a thought, an idea and based on that the actions you will take will lead you in a different and new direction. Will lead you in the right direction.</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </body>
+</html>
+
